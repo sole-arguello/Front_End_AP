@@ -1,0 +1,53 @@
+.contenedor_skill{
+    background: rgb(125, 151, 177);
+    text-align: center;
+    margin-top: 1px;
+}
+
+    .titulo{
+        padding-top: 20px;
+        margin-bottom: 30px;
+        font-weight: 700;
+        text-shadow: 0 1px rgb(223, 215, 215);
+    }
+
+    .btn_nuevo{
+        margin-bottom: 40px;
+        padding: 10px 15px;
+        font-weight: 600;
+        font-size: 20px;
+        border-radius: 5px;
+        border: none;
+        color: rgb(91, 130, 168);
+        background-color: rgb(241, 236, 236);
+        box-shadow: 0px 2px 2px 0px rgb(129, 129, 131);       
+    }
+    .btn_nuevo:hover{
+        cursor: pointer;
+        border: 1px solid;
+        color: rgb(129, 129, 131);
+        box-shadow: 0px 3px 3px 0px rgb(159, 159, 170);
+    }
+    .btn_edicion{
+        width: 100%;
+        text-align: right;
+        position: relative;
+        top: 30px;
+    }
+
+        .icono_edicion{
+            border-radius: 5px;
+            background: rgb(241, 236, 236);
+        }
+        .icono_edicion:hover{
+            background: rgb(203, 203, 209);
+        }
+            #iconos{
+                color: rgb(125, 151, 177);
+            }
+        .container_car{
+            /*background-color: antiquewhite;*/
+        }
+        .container_car2{
+            background-color: red;
+        }
