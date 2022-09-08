@@ -34,7 +34,7 @@
                  
                     margin-bottom: 10px;
                 }
-                .profesion{
+                .apellido{
                     margin-bottom: 50px;
                 }
                 .descripcion{
@@ -42,6 +42,7 @@
                     width: 90%;
                     border-radius: 5px;
                     padding: 15px;
+                    margin-top: 30px;
                 }
     .btn_editar{
         margin-left: 120px;

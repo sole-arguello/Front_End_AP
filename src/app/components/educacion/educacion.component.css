@@ -1,0 +1,68 @@
+.contenedor_educacion{
+    background: rgb(144, 168, 192);
+    text-align: center;
+    margin-top: 1px;    
+}
+    .titulo{
+        font-size: 30px;
+        font-weight: 700;
+        padding-top: 20px;
+        text-shadow: 0 1px rgb(223, 215, 215);
+    }
+    .btn_nuevo{
+        margin-bottom: 20px;
+        padding: 10px 15px;
+        font-weight: 600;
+        font-size: 15px;
+        border-radius: 5px;
+        border: none;
+        color: rgb(91, 130, 168);
+        background-color: rgb(250, 246, 246);
+        box-shadow: 0px 2px 2px 0px rgb(129, 129, 131);
+
+    }
+    .btn_nuevo:hover{
+        cursor: pointer;
+        border: 1px solid;
+        color: rgb(129, 129, 131);
+        box-shadow: 0px 3px 3px 0px rgb(159, 159, 170);
+    }
+
+    .contrenedor_card{
+        /*background: wheat;*/
+        
+        width: 20%;
+        border: 1px solid rgb(99, 97, 97);
+        box-shadow: 0 1px 1px rgb(151, 149, 149);
+        border-radius: 5px;
+    }
+    .conenedor_card-edicion{
+        width: 100%;
+        text-align: right;
+    }
+        .contnedor_card-iconos{
+            
+        }
+            #iconos-edicion{
+                border: 1px solid;
+                border-radius: 5px;
+                color: white;
+                width: 30px;
+                height: 40px;
+                padding: 5px;               
+            }
+            #iconos-edicion:hover{
+                cursor: pointer;
+                color: rgb(107, 104, 104);
+            }
+    .card_img{
+       width: 100%;
+    }
+
+    .contenedor_card-texto{
+    
+    }
+        .texto{
+            font-weight: 600;
+            text-shadow: 0 1px rgb(223, 215, 215);
+        }

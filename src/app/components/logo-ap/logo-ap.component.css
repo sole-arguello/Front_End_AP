@@ -1,22 +1,23 @@
 .contenedor_header{
-   background-color: rgb(144, 168, 192);
+   background-color: rgb(25, 59, 88);
    display: flex;
    align-items: center;
-
 }
     .imgLogo{
         width: 150px;
         cursor: pointer;
     }
     .contenedor_nav{
-        width: 35%;
+        width: 40%;
         padding: 0 2px;
         margin-left: 50px;
         font-size: 15px;
-        font-weight: 600;   
+        font-weight: 600;
+         
     }
         .items_nav{
             padding: 10px;
+            text-decoration: none;  
             cursor: pointer;
             color: white;
         }
@@ -46,18 +47,34 @@
         
  
     }
-        .redes{
+        .contenedor_iconos-redes{
             width: 100%;
         }
+            .iconosRedes{
+                width: 50px;
+                padding: 10px;
+            }
+            .iconosRedes:hover{
+                
+            }
 
-        .btn-redes{
-        
-            background-color: bisque;
+        .contenedor_btn-redes{
                 
         }
+            #editar{
+                color: white;
+                cursor: pointer;
+            }
+            #editar:hover{
+                color: black;
+            }
+            #delete{
+                color: white;
+                cursor: pointer;
+            }
+            #delete:hover{
+                color: black;
+            }
 
-        .iconosRedes{
-            width: 50px;
-            padding: 10px;
-        }
+
 
