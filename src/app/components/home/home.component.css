@@ -1,0 +1,10 @@
+.contenedor_body{
+    background: linear-gradient(to bottom, rgb(165, 185, 206), rgb(125, 151, 177), rgb(63, 120, 170) ,rgb(45, 80, 110));
+    
+}
+
+.linea{
+    height: 30px;
+    color: #fefefe;
+    box-shadow: 2px -2px 5px #999;
+}

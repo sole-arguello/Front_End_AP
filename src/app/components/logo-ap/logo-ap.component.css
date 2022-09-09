@@ -17,10 +17,10 @@
     }
         .items_nav{
             padding: 10px;
-            text-decoration: none;  
-            cursor: pointer;
+            text-decoration: none;
             color: white;
         }
+
     .contenedor_btn{
         width: 31%;
         padding: 20px;
@@ -59,21 +59,21 @@
             }
 
         .contenedor_btn-redes{
-                
+            
         }
             #editar{
                 color: white;
                 cursor: pointer;
             }
             #editar:hover{
-                color: black;
+                color: rgb(144, 168, 192);
             }
             #delete{
                 color: white;
                 cursor: pointer;
             }
             #delete:hover{
-                color: black;
+                color: rgb(144, 168, 192);
             }
 
 

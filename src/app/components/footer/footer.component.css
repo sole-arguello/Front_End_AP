@@ -1,0 +1,17 @@
+.row{
+   background: rgb(25, 59, 88);
+}
+
+.footer{
+    padding-top: 30px;
+    color: #fefefe;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    box-shadow: 2px -2px 5px #999;
+}
+.p{
+    color: white;
+}
