@@ -1,33 +1,16 @@
 .contenedor_header{
    background-color: rgb(25, 59, 88);
-   display: flex;
-   align-items: center;
-}
-    .imgLogo{
-        width: 150px;
-        cursor: pointer;
-    }
-    .contenedor_nav{
-        width: 40%;
-        padding: 0 2px;
-        margin-left: 50px;
-        font-size: 15px;
-        font-weight: 600;
-         
-    }
-        .items_nav{
-            padding: 10px;
-            text-decoration: none;
-            color: white;
-        }
 
-    .contenedor_btn{
-        width: 31%;
-        padding: 20px;
-    }
+}
+.nav1{
+    color: whitesmoke;
+}
+.nav1:hover{
+    color: rgb(144, 168, 192);
+}
         .btn_nav{
-            padding: 10px 15px;
-            margin-left: 8px;
+            margin-right: 10px;
+            padding: 5px 10px;
             font-weight: 600;
             font-size: 15px;
             border-radius: 5px;
@@ -41,25 +24,6 @@
             border: 1px solid;
             color: rgb(129, 129, 131);
             box-shadow: 0px 3px 3px 0px rgb(159, 159, 170);        
-        }
-    
-    .contenedor-redes{
-        
- 
-    }
-        .contenedor_iconos-redes{
-            width: 100%;
-        }
-            .iconosRedes{
-                width: 50px;
-                padding: 10px;
-            }
-            .iconosRedes:hover{
-                
-            }
-
-        .contenedor_btn-redes{
-            
         }
             #editar{
                 color: white;

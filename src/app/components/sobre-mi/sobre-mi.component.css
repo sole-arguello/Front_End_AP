@@ -7,7 +7,8 @@
         flex-direction: column;
     }
         .banner{
-            width: 100%;
+            margin-top: 0;
+            width: 100.5%;
             height: 400px;
         }
 
@@ -20,7 +21,7 @@
                 border-radius: 100%;
                 margin-left: 80px;
                 position: absolute;
-                top: 420px;
+                top: 400px;
                 bottom: 0;
             }
             .contenedor_texto{
@@ -30,19 +31,25 @@
                 margin-left: 500px;
                 
             }
-                .nombre{
-                 
+                .texto1{
+                    font-size: 30px;
+                    font-weight: 600;
                     margin-bottom: 10px;
+                    text-shadow: 0 1px rgb(223, 215, 215);
                 }
                 .apellido{
                     margin-bottom: 50px;
+                }
+                .texto2{
+                    font-size: 20px;
+                    font-weight: 400;
                 }
                 .descripcion{
                     background-color: rgb(250, 246, 246);
                     width: 90%;
                     border-radius: 5px;
                     padding: 15px;
-                    margin-top: 30px;
+                    margin-top: 60px;
                 }
     .btn_editar{
         margin-left: 120px;
