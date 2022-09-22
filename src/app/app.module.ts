@@ -15,6 +15,7 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { PruebaComponent } from './components/prueba/prueba.component';
+import { LoginComponent } from './components/login/login.component';
 
 
 
@@ -31,6 +32,7 @@ import { PruebaComponent } from './components/prueba/prueba.component';
     ProyectosComponent,
     FooterComponent,
     PruebaComponent,
+    LoginComponent,
 
   ],
   imports: [
