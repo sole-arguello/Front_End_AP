@@ -16,8 +16,7 @@ import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { PruebaComponent } from './components/prueba/prueba.component';
 import { LoginComponent } from './components/login/login.component';
-
-
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -33,7 +32,6 @@ import { LoginComponent } from './components/login/login.component';
     FooterComponent,
     PruebaComponent,
     LoginComponent,
-
   ],
   imports: [
     BrowserModule,
@@ -41,8 +39,9 @@ import { LoginComponent } from './components/login/login.component';
     BrowserAnimationsModule,
     FormsModule,
     NgCircleProgressModule.forRoot({}),
+    HttpClientModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

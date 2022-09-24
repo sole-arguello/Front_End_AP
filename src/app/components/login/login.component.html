@@ -10,47 +10,56 @@
       </div>
       <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
         <form>
-          <h1 class="titulo">Registrarse</h1>
-          <!-- Email input -->
-          <div class="form-outline mb-4">
-            <input
-              type="email"
-              id="form1Example13"
-              class="form-control form-control-lg"
-            />
-            <label class="form-label" for="form1Example13">Direccion Email</label>
-          </div>
-
-          <!-- Password input -->
-          <div class="form-outline mb-4">
-            <input
-              type="password"
-              id="form1Example23"
-              class="form-control form-control-lg"
-            />
-            <label class="form-label" for="form1Example23">Password</label>
-          </div>
-
-          <div class="d-flex justify-content-around align-items-center mb-4">
-            <!-- Checkbox -->
-            <div class="form-check">
+          <h1 class="titulo">Por favor, ingrese usuario y clave</h1>
+          <!--aca modifico segun video-->
+          <form #f="ngForm" (ngSubmit)="onLogin()" novalidate action="">
+            <!-- Email input -->
+            <div class="form-outline mb-4">
               <input
-                class="form-check-input"
-                type="checkbox"
-                value=""
-                id="form1Example3"
-                checked
+                type="text"
+                id="nombreUsuario"
+                name="nombreUsuario"
+                class="form-control form-control-lg"
+                [(ngModel)]="nombreUsuario"
+                required
               />
-              <label class="form-check-label" for="form1Example3">
-                Recordar
-              </label>
+              <label class="form-label" for="nombreUsuario form1Example13"
+                >Usuario</label
+              >
             </div>
-          <!-- Submit button -->
-            <button type="submit" class="btn btn-lg btn-block">
-              Iniciar Secion
-            </button>
-          </div>
 
+            <!-- Password input -->
+            <div class="form-outline mb-4">
+              <input
+                type="password"
+                id="password"
+                class="form-control form-control-lg"
+                [(ngModel)]="password"
+                required
+              />
+              <label class="form-label" for="password form1Example23"
+                >Password</label
+              >
+            </div>
+
+            <div class="d-flex justify-content-around align-items-center mb-4">
+              <!-- Checkbox -->
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="form1Example3"
+                  checked
+                />
+                <label class="form-check-label" for="form1Example3">
+                  Recordar
+                </label>
+              </div>
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-lg btn-block">Login</button>
+            </div>
+          </form>
         </form>
       </div>
     </div>
