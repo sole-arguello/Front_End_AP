@@ -1,63 +1,109 @@
 <a></a>
-<header class="d-flex flex-wrap gap-4 align-items-center justify-content-center 
-justify-content-md-between py-1 mb-4 contenedor_header">
-    <p class="d-flex">
-      <img src="https://i.ibb.co/KN9KPZh/APLogo.png" width="150" height="auto">
-    </p>
+<header
+  class="d-flex flex-wrap gap-4 align-items-center justify-content-center justify-content-md-between py-1 mb-4 contenedor_header"
+>
+  <p class="d-flex">
+    <img src="https://i.ibb.co/KN9KPZh/APLogo.png" width="150" height="auto" />
+  </p>
 
-    <div class="d-flex ">
-      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-1">
-          <li><a href="#" class="nav-link px-2 nav1 fw-bold">Home</a></li>
-          <li><a href="#" class="nav-link px-2 nav1">Sobre Mi</a></li>
-          <li><a href="#" class="nav-link px-2 nav1">Educacion</a></li>
-          <li><a href="#" class="nav-link px-2 nav1">Experiencia</a></li>
-          <li><a href="#" class="nav-link px-2 nav1">Skills</a></li>
-          <li><a href="#" class="nav-link px-2 nav1">proyectos</a></li>
-        </ul>
-    </div>
+  <div class="d-flex">
+    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-1">
+      <li><a href="#" class="nav-link px-2 nav1 fw-bold">Home</a></li>
+      <li><a href="#" class="nav-link px-2 nav1">Sobre Mi</a></li>
+      <li><a href="#" class="nav-link px-2 nav1">Educacion</a></li>
+      <li><a href="#" class="nav-link px-2 nav1">Experiencia</a></li>
+      <li><a href="#" class="nav-link px-2 nav1">Skills</a></li>
+      <li><a href="#" class="nav-link px-2 nav1">proyectos</a></li>
+    </ul>
+  </div>
 
-    <div class="col-md-0">
-      <button type="button" class="btn_nav" (click)="login()">Iniciar Secion</button>
-      <button type="button" class="btn_nav">Nueva Red</button>
-    </div>
-    <div>
-      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="#" class="nav-link px-2"><img src="https://i.ibb.co/TbLVDMd/git.png" width="30" height="30"></a></li>
-          <li><a href="#" class="nav-link px-2"><img src="https://i.ibb.co/zH71h0Z/instagram.png" width="30" height="30"></a></li>
-          <li><a href="#" class="nav-link px-2"><img src="https://i.ibb.co/3417Zyz/linkedin.png" width="30" height="30"></a></li>
-          <li><a href="#" class="nav-link px-2"><img src="" width="30" height="30"></a></li>
-        </ul>
-        <!--botones edicion-->
-        <div class="contenedor_btn-redes">
-          <a ><svg id="editar" xmlns="http://www.w3.org/2000/svg" width="16" height="16" 
-              fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
-              <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 
+  <div class="col-md-0">
+    <button type="button" class="btn_nav" (click)="login()" *ngIf="!isLogged">
+      Iniciar Secion
+    </button>
+    <button type="button" class="btn_nav" (click)="onLogOut()" *ngIf="isLogged">
+      Cerrar Secion
+    </button>
+    <button type="button" class="btn_nav">Nueva Red</button>
+  </div>
+  <div>
+    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+      <li>
+        <a href="#" class="nav-link px-2"
+          ><img src="https://i.ibb.co/TbLVDMd/git.png" width="30" height="30"
+        /></a>
+      </li>
+      <li>
+        <a href="#" class="nav-link px-2"
+          ><img
+            src="https://i.ibb.co/zH71h0Z/instagram.png"
+            width="30"
+            height="30"
+        /></a>
+      </li>
+      <li>
+        <a href="#" class="nav-link px-2"
+          ><img
+            src="https://i.ibb.co/3417Zyz/linkedin.png"
+            width="30"
+            height="30"
+        /></a>
+      </li>
+      <li>
+        <a href="#" class="nav-link px-2"
+          ><img src="" width="30" height="30"
+        /></a>
+      </li>
+    </ul>
+    <!--botones edicion-->
+    <div class="contenedor_btn-redes">
+      <a
+        ><svg
+          id="editar"
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-pencil"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 
               .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 
               .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 
               2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 
               .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 
               3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 
-              0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
-            </svg></a>
+              0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"
+          /></svg
+      ></a>
 
-            <a ><svg id="delete" xmlns="http://www.w3.org/2000/svg" width="16" height="16" 
-              fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
-              <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 
+      <a
+        ><svg
+          id="delete"
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-trash"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 
               .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 
-              .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
-              <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 
+              .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"
+          />
+          <path
+            fill-rule="evenodd"
+            d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 
               2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 
               1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 
-              1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
-            </svg></a>
-          
-  
-      </div>
+              1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"
+          /></svg
+      ></a>
     </div>
-
-
-
-  </header>
+  </div>
+</header>
 <!--<div class="contenedor_header">
     
     <a><img class="imgLogo" src="https://i.ibb.co/PT5DLpj/APLogo.png"></a>
