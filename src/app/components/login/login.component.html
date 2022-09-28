@@ -8,14 +8,12 @@
           alt="Phone image"
         />
       </div>
-
-      <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
-        <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+      <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+        <h1 class="titulo">Por favor, ingrese usuario y clave</h1>
+        <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
           <!--aca modifico segun video-->
 
-          <h1 class="titulo">Por favor, ingrese usuario y clave</h1>
-
-          <!-- Email input -->
+          <!-- Usuario input -->
           <div class="form-outline mb-4">
             <input
               type="text"
@@ -59,8 +57,8 @@
             <!-- Submit button -->
             <input type="submit" class="btn btn-lg btn-block" value="enviar" />
           </div>
-        </div>
-      </form>
+        </form>
+      </div>
     </div>
   </div>
 </section>

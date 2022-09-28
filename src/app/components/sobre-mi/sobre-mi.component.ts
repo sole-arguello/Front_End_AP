@@ -10,7 +10,7 @@ import { persona } from '../../model/persona.model';
 export class SobreMiComponent implements OnInit {
   persona: persona = new persona('', '', '');
 
-  constructor(public personaSrvice: PersonaService) {} 
+  constructor(public personaSrvice: PersonaService) {}
 
   ngOnInit(): void {
     this.personaSrvice.getPersona().subscribe((data) => {
