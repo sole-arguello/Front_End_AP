@@ -1,4 +1,4 @@
-<!--<section class="vh-100 section">
+<section class="vh-100 section">
   <div class="container py-5 h-100">
     <div class="row d-flex align-items-center justify-content-center h-100">
       <div class="col-md-8 col-lg-7 col-xl-6">
@@ -11,11 +11,11 @@
 
       <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
         <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
-          <!--aca modifico segun video--
+          <!--aca modifico segun video-->
 
           <h1 class="titulo">Por favor, ingrese usuario y clave</h1>
 
-          <!-- Email input --
+          <!-- Email input -->
           <div class="form-outline mb-4">
             <input
               type="text"
@@ -23,25 +23,27 @@
               name="nombreUsuario"
               class="form-control form-control-lg"
               [(ngModel)]="nombreUsuario"
+              [ngModelOptions]="{ standalone: true }"
               required
             />
             <label class="form-label" for="nombreUsuario">Usuario</label>
           </div>
 
-          <!-- Password input --
+          <!-- Password input -->
           <div class="form-outline mb-4">
             <input
               type="password"
               id="password"
               class="form-control form-control-lg"
               [(ngModel)]="password"
+              [ngModelOptions]="{ standalone: true }"
               required
             />
             <label class="form-label" for="password">Password</label>
           </div>
 
           <div class="d-flex justify-content-around align-items-center mb-4">
-            <!-- Checkbox --
+            <!-- Checkbox -->
             <div class="form-check">
               <input
                 class="form-check-input"
@@ -54,61 +56,11 @@
                 Recordar
               </label>
             </div>
-            <!-- Submit button --
+            <!-- Submit button -->
             <input type="submit" class="btn btn-lg btn-block" value="enviar" />
           </div>
         </div>
       </form>
-    </div>
-  </div>
-</section>
--->
-<section class="vh-100" style="background-color: #508bfc">
-  <div class="container py-5 h-100">
-    <div class="row d-flex justify-content-center align-items-center h-100">
-      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
-        <div class="card shadow-2-strong" style="border-radius: 1rem">
-          <div class="card-body p-5 text-center">
-            <h3 class="mb-5">Login</h3>
-
-            <form  (ngSubmit)="onLogin()" novalidate>
-              <div class="form-outline mb-4">
-                <input
-                  type="email"
-                  id="nombreUsuario"
-                  name="nombreUsuario"
-                  class="form-control form-control-lg"
-                  [(ngModel)]="nombreUsuario"
-                  required
-                />
-                <label class="form-label" for="typeEmailX-2">Usuario</label>
-              </div>
-
-              <div class="form-outline mb-4">
-                <input
-                  type="password"
-                  id="password"
-                  name="password"
-                  class="form-control form-control-lg"
-                  [(ngModel)]="password"
-                  required
-                />
-                <label class="form-label" for="typePasswordX-2"
-                  >Contraseña</label
-                >
-              </div>
-
-              <!-- Checkbox -->
-
-              <button class="btn btn-primary btn-lg btn-block" type="submit">
-                Login
-              </button>
-            </form>
-
-            <hr class="my-4" />
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </section>

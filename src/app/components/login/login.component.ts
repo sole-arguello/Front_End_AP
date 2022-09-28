@@ -13,7 +13,7 @@ export class LoginComponent implements OnInit {
   isLogged = false;
   isLogginFail = false;
   loginUsuario!: LoginUsuario;
-  nombreUsuario!: string;
+  nombreUsuario = "";
   password!: string;
   roles: string[] = [];
   errMsj!: string;
