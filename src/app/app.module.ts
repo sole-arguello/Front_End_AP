@@ -20,6 +20,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { interceptorProvider } from './sevice/interceptor-service';
 
 import { EditarPersonaComponent } from './components/sobre-mi/editar-persona.component';
+import { ExperienciaComponent } from './components/experiencia/experiencia.component';
+import { EditExperienciaComponent } from './components/experiencia/edit-experiencia.component';
 
 @NgModule({
   declarations: [
@@ -29,13 +31,14 @@ import { EditarPersonaComponent } from './components/sobre-mi/editar-persona.com
     SobreMiComponent,
     HomeComponent,
     EducacionComponent,
-
     SkillsComponent,
     ProyectosComponent,
     FooterComponent,
     PruebaComponent,
     LoginComponent,
     EditarPersonaComponent,
+    ExperienciaComponent,
+    EditExperienciaComponent,
   ],
   imports: [
     BrowserModule,

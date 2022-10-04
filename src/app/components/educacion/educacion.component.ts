@@ -11,5 +11,4 @@ export class EducacionComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }

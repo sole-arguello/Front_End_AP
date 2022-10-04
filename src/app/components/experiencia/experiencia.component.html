@@ -1,0 +1,93 @@
+<a id="experiencia"></a>
+<div class="container">
+  <p class="text-center fs-1 fw-bold ">Experiencia</p>
+  <button
+    type="button"
+    class="btn btn__nuevaExperiencia"
+    (click)="openVentana()"
+    *ngIf="isLogged"
+  >
+    Nueva Experiencia
+  </button>
+  <div class="row g-2 justify-content-center">
+    <div
+      class="col-12 col-md-6 col-lg-6 borde"
+      id="card"
+      *ngFor="let Experiencia of expe"
+    >
+      <div class="edicion" *ngIf="isLogged">
+        <button class="editar btn" routerLink="/editexp/{{ Experiencia.id }}">
+          <i class="fa-solid fa-pencil"></i>
+        </button>
+        <button class="borrar btn" (click)="delete(Experiencia.id)">
+          <i class="fa-solid fa-trash-can"></i>
+        </button>
+      </div>
+      <img [src]="Experiencia.img" class="card-img-top" id="img" alt="..." />
+      <div class="card-body">
+        <p class="fs-4 text-center fw-bold">{{ Experiencia.nombreE }}</p>
+        <p class="card-text">{{ Experiencia.descripcionE }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="ventanaexperiencia">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">INGRESAR EXPERIENCIA</h5>
+        <img src="" />
+      </div>
+      <div class="modal-body">
+        <H1>AGREGAR EXPERIENCIA</H1>
+        <form (ngSubmit)="onCreate()" #f="ngForm" novalidate>
+          <div class="col-12">
+            <label for="iempresa" class="form-label"
+              >URL DEL LOGO EMPRESA</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="iempresa"
+              name="iempresa"
+              [(ngModel)]="img"
+              required
+            />
+          </div>
+          <div class="col-12">
+            <label for="Nempresa" class="form-label">NOMBRE EMPRESA</label>
+            <input
+              type="text"
+              class="form-control"
+              id="Nempresa"
+              name="Nempresa"
+              [(ngModel)]="nombreE"
+              required
+            />
+          </div>
+          <div class="col-12">
+            <label for="Tempresa" class="form-label">TAREA REALIZADA</label>
+            <input
+              type="text"
+              class="form-control"
+              id="Tempresa"
+              name="Tempresa"
+              [(ngModel)]="descripcionE"
+              required
+            />
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" (click)="onCreate()">
+              AGREGAR
+            </button>
+            <button type="button" class="btn btn-dark" (click)="exitModal()">
+              CANCELAR
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
