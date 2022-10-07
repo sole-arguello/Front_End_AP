@@ -1,0 +1,72 @@
+<div class="container" *ngIf="educacion">
+  <div class="row justify-content-center">
+    <h4>ACTUALIZAR EDUCACION</h4>
+    <form #f="ngForm" novalidate>
+      <img
+        [src]="educacion.imgE"
+        style="width: 200px"
+        class="card-img-top"
+        id="img"
+        alt="..."
+      />
+      <div class="form-group">
+        <label for="img">URL LOGO INSTITUCION</label>
+        <input
+          type="text"
+          class="form-control"
+          id="img"
+          name="img"
+          [(ngModel)]="educacion.imgE"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="nombrei">NOMBRE INSTITUCION</label>
+        <input
+          type="text"
+          class="form-control"
+          id="nombrei"
+          name="nombrei"
+          [(ngModel)]="educacion.institucionE"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="tituloE">TITULO </label>
+        <input
+          type="text"
+          class="form-control"
+          id="tituloE"
+          name="tituloE"
+          [(ngModel)]="educacion.tituloE"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="anioEdu">AÑO CURSADO(solo admite numero)</label>
+        <input
+          type="text"
+          class="form-control"
+          id="anioEdu"
+          name="anioEdu"
+          [(ngModel)]="educacion.anioE"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="anioE">CONDICION (Concluido/ Cursando) </label>
+        <input
+          type="text"
+          class="form-control"
+          id="anioE"
+          name="anioE"
+          [(ngModel)]="educacion.condicionE"
+          required
+        />
+      </div>
+
+      <button class="btn btn-success" (click)="onUpdate()">EDITAR</button>
+      <button (click)="cancelar()" class="btn btn-dark">CANCELAR</button>
+    </form>
+  </div>
+</div>

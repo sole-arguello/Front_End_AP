@@ -1,4 +1,4 @@
-.titulo{
+/*.titulo{
     font-size: 50px;
     font-weight: 700;
     text-shadow: 0 1px rgb(223, 215, 215);
@@ -42,4 +42,41 @@
 }
 .condicion{
     font-weight: 600;
+}*/
+#img {
+  height: 300px;
+  width: 200px;
+}
+
+.container {
+  text-align: center;
+  justify-content: space-around;
+  margin-top: 110px;
+}
+.boton {
+  margin-bottom: 2rem;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 1rem;
+}
+.borde {
+  border-style: outset;
+  max-width: 400px;
+  margin: 0.6rem;
+}
+.edicion {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.editar,
+.borrar {
+  font-size: 20px;
+  padding-right: 10px;
+}
+
+@media screen and (max-width: 980px) {
+  .container {
+    margin-top: 160px;
+  }
 }
