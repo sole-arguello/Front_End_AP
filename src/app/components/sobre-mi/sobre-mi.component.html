@@ -2,29 +2,33 @@
 <div class="contenedor_sobreMi">
   <div class="contenedor_edicion">
     <img class="banner" [src]="persona.banner" alt="banner" />
-    <!--<img class="banner" src="https://i.ibb.co/qsV9wFQ/banner.png" />-->
 
     <div class="contenedor_info">
-      <img class="mi_foto" [src]="persona.img" alt="imagen-Personal" />
-      <!--<img class="mi_foto" src="https://i.ibb.co/bN1H92b/foto-Personal.jpg" />-->
+      <div class="info__img--persona">
+        <img class="mi_foto" [src]="persona.img" alt="imagen-Personal" />
+        <div class="info__datos--persona">
+          <P class="texto1">{{ persona.nombre }}</P>
+          <p class="texto1">{{ persona.apellido }}</p>
+          <br />
+          <P class="texto2">{{ persona.titulo }}</P>
+          <p class="texto2">{{ persona.localidad }}</p>
+
+        </div>
+
+      </div>
       <div class="contenedor_texto">
-        <P class="texto1">{{ persona.nombre }}</P>
-        <p class="texto1">{{ persona.apellido }}</p>
-        <br />
-        <P class="texto2">{{ persona.titulo }}</P>
-        <p class="texto2">{{ persona.localidad }}</p>
-        <h1>Sobre Mi</h1>
+
+        <h1 class="texto3">Sobre Mi</h1>
         <p class="descripcion">{{ persona.sobremi }}</p>
+        <button
+        type="button"
+        class="btn_editar"
+        *ngIf="isLogged"
+        routerLink="/editper/{{ persona.id }}"
+      >
+        Editar Persona
+      </button>
       </div>
     </div>
   </div>
-
-  <button
-    type="button"
-    class="btn_editar"
-    *ngIf="isLogged"
-    routerLink="/editper/{{ persona.id }}"
-  >
-    Editar Persona
-  </button>
 </div>

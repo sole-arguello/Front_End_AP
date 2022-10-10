@@ -1,71 +1,76 @@
-.contenedor_sobreMi{
-   /* background-color: rgb(144, 168, 192);*/
+.contenedor_edicion {
+  display: flex;
+  flex-direction: column;
+}
+.banner {
+  margin-top: 0;
+  width: 100.5%;
+  height: 400px;
 }
 
-    .contenedor_edicion{
-        display: flex;
-        flex-direction: column;
-    }
-        .banner{
-            margin-top: 0;
-            width: 100.5%;
-            height: 400px;
-        }
-
-        .contenedor_info{
-            display: flex;
-            width: 100%;
-        }
-            .mi_foto{
-                width: 15%;
-                border-radius: 100%;
-                margin-left: 80px;
-                position: absolute;
-                top: 400px;
-                bottom: 0;
-            }
-            .contenedor_texto{
-                width: 100%;
-                text-align: center;
-                padding: 20px;
-                margin-left: 500px;
-                
-            }
-                .texto1{
-                    font-size: 30px;
-                    font-weight: 600;
-                    margin-bottom: 10px;
-                    text-shadow: 0 1px rgb(223, 215, 215);
-                }
-                .apellido{
-                    margin-bottom: 50px;
-                }
-                .texto2{
-                    font-size: 20px;
-                    font-weight: 400;
-                }
-                .descripcion{
-                    background-color: rgb(250, 246, 246);
-                    width: 90%;
-                    border-radius: 5px;
-                    padding: 15px;
-                    margin-top: 60px;
-                }
-    .btn_editar{
-        margin-left: 120px;
-        margin-bottom: 50px;
-        padding: 10px 15px;
-        font-weight: 600;
-        font-size: 15px;
-        border-radius: 5px;
-        border: none;
-        color: rgb(144, 168, 192);
-        background-color: rgb(250, 246, 246);
-        box-shadow: 0px 2px 2px 0px rgb(129, 129, 131);
-    }
-    .btn_editar:hover{
-        color: rgb(129, 129, 131);
-        cursor: pointer;
-        border: 1px solid;
-        box-shadow: 0px 3px 3px 0px rgb(159, 159, 170);  
-    }
+.contenedor_info {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin-top: 5rem;
+  width: 100%;
+}
+.mi_foto {
+  width: 50%;
+  border-radius: 100%;
+  margin-left: 6%;
+  margin-bottom: 5%;
+}
+.info__box {
+  width: 50%;
+}
+.contenedor_texto {
+  width: 100%;
+  text-align: center;
+}
+.texto1 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-shadow: 0 1px rgb(223, 215, 215);
+}
+.texto2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.texto3 {
+  font-weight: 700;
+  text-shadow: 0 1px rgb(223, 215, 215);
+}
+.descripcion {
+  background-color: rgb(224, 220, 220);
+  width: 100%;
+  font-size: 1rem;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 3rem;
+  margin-top: 3.5rem;
+}
+.btn_editar {
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-top: 2rem;
+  padding: 10px 15px;
+  font-weight: 600;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  border: none;
+  color: rgb(144, 168, 192);
+  background-color: rgb(250, 246, 246);
+  box-shadow: 0px 2px 2px 0px rgb(129, 129, 131);
+}
+.btn_editar:hover {
+  color: rgb(129, 129, 131);
+  cursor: pointer;
+  border: 1px solid;
+  box-shadow: 0px 3px 3px 0px rgb(159, 159, 170);
+}
+@media (max-width: 768px) {
+  .contenedor_info {
+    display: block;
+  }
+}
