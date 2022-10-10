@@ -5,6 +5,11 @@ URL: https://ibb.co/album/4PM7rN
 Logo Arg Prog:
 https://i.ibb.co/KN9KPZh/APLogo.png
 
+logo Gmail:
+https://i.ibb.co/BP8rrrD/correo3.png
+https://i.ibb.co/zPvmbq7/correo.png
+<i class="fa-regular fa-envelope"></i>
+
 Logo Git:
 https://i.ibb.co/TbLVDMd/git.png
 

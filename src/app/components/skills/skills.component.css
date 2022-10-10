@@ -43,9 +43,9 @@
             #iconos{
                 color: rgb(125, 151, 177);
             }
-        .container_car{
-            /*background-color: antiquewhite;*/
-        }
-        .container_car2{
-            background-color: red;
+        .sub-titulo{
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 3rem;
+            text-shadow: 0 1px rgb(223, 215, 215);
         }

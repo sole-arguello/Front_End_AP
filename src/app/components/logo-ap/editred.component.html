@@ -1,0 +1,39 @@
+<div class="container" *ngIf="redes">
+  <div class="row justify-content-center">
+    <h4>MODIFICAR RED SOCIAL</h4>
+    <form #f="ngForm" novalidate (ngSubmit)="onUpdate()">
+      <img
+        [src]="redes.imgRed"
+        style="width: 200px"
+        class="card-img-top"
+        id="img"
+        alt="..."
+      />
+      <div class="form-group">
+        <label for="imgRed">URL IMAGEN RED SOCIAL</label>
+        <input
+          type="text"
+          class="form-control"
+          id="imgRed"
+          name="imgRed"
+          [(ngModel)]="redes.imgRed"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="linkRed">URL RED SOCIAL</label>
+        <input
+          type="text"
+          class="form-control"
+          id="linkRed"
+          name="linkRed"
+          [(ngModel)]="redes.linkRed"
+          required
+        />
+      </div>
+
+      <button class="btn btn-success">EDITAR</button>
+      <button (click)="cancelar()" class="btn btn-dark">CANCELAR</button>
+    </form>
+  </div>
+</div>

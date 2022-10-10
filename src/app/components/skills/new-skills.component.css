@@ -1,0 +1,13 @@
+.btn {
+  margin-top: 2rem;
+  padding-right: 2rem;
+}
+
+.container {
+  margin: 10px;
+  padding: 20px;
+  background-color: #e2e5e8;
+  border-style: inset;
+  text-align: center;
+  font-size: 20px;
+}

@@ -1,44 +1,36 @@
-.contenedor_header{
-   background-color: rgb(25, 59, 88);
-
+header {
+  background-color: rgb(25, 59, 88);
 }
-.nav1{
-    color: whitesmoke;
+.nav-link {
+  color: whitesmoke;
+  font-size: 1.2rem;
 }
-.nav1:hover{
-    color: rgb(144, 168, 192);
+.redes__link {
+  color: white;
+  margin-right: 0.5rem;
 }
-        .btn_nav{
-            margin-right: 10px;
-            padding: 5px 10px;
-            font-weight: 600;
-            font-size: 15px;
-            border-radius: 5px;
-            border: none;
-            color: rgb(144, 168, 192);
-            background: rgb(250, 246, 246);
-            box-shadow: 0px 2px 2px 0px rgb(129, 129, 131);
-        }
-        .btn_nav:hover{
-            cursor: pointer;
-            border: 1px solid;
-            color: rgb(129, 129, 131);
-            box-shadow: 0px 3px 3px 0px rgb(159, 159, 170);        
-        }
-            #editar{
-                color: white;
-                cursor: pointer;
-            }
-            #editar:hover{
-                color: rgb(144, 168, 192);
-            }
-            #delete{
-                color: white;
-                cursor: pointer;
-            }
-            #delete:hover{
-                color: rgb(144, 168, 192);
-            }
-
-
-
+.nav-link:hover {
+  color: rgb(144, 168, 192);
+}
+.btn__box {
+  width: 15%;
+}
+.btn__red {
+  margin-left: 2px;
+}
+button {
+  padding: 3%;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  color: rgb(144, 168, 192);
+  background: rgb(250, 246, 246);
+  box-shadow: 0px 2px 2px 0px rgb(129, 129, 131);
+}
+button:hover {
+  cursor: pointer;
+  border: 1px solid;
+  color: rgb(129, 129, 131);
+  box-shadow: 0px 3px 3px 0px #9f9faa;
+}

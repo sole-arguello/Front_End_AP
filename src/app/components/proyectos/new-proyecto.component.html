@@ -1,72 +1,71 @@
-<div class="container mt-6">
+<div class="container">
   <div class="row justify-content-center">
     <div>
-      <h4>INGRESAR EDUCACION</h4>
+      <h4>INCORPORAR PROYECTO</h4>
       <form #f="ngForm" novalidate>
         <img
-          [src]="imgE"
+          [src]="imgP"
           style="width: 200px"
           class="card-img-top"
           id="img"
           alt="..."
         />
         <div class="form-group">
-          <label for="imgE">URL LOGO INSTITUCION</label>
+          <label for="img">URL IMAGEN PROYECTO</label>
           <input
             type="text"
             class="form-control"
-            id="imgE"
-            name="imgE"
-            [(ngModel)]="imgE"
+            name="img"
+            [(ngModel)]="imgP"
             required
           />
         </div>
         <div class="form-group">
-          <label for="nombrei">NOMBRE INSTITUCION</label>
+          <label for="nombreP">NOMBRE DEL PROYECTO</label>
           <input
             type="text"
             class="form-control"
-            id="nombrei"
-            name="nombrei"
-            [(ngModel)]="institucionE"
+            id="nombreP"
+            name="nombreP"
+            [(ngModel)]="nombreP"
             required
           />
         </div>
         <div class="form-group">
-          <label for="tituloE">TITULO </label>
-          <input
+          <label for="descp">DESCRIPCION PROYECTO</label>
+          <textarea
             type="text"
             class="form-control"
-            id="tituloE"
-            name="tituloE"
-            [(ngModel)]="tituloE"
+            id="descp"
+            name="descp"
+            [(ngModel)]="descripcionP"
             required
-          />
+          ></textarea>
         </div>
         <div class="form-group">
-          <label for="anioEdu">AÑO CURSADO (solo admite numero)</label>
+          <label for="anioEdu">URL PAGINA PROYECTO </label>
           <input
             type="text"
             class="form-control"
             id="anioEdu"
             name="anioEdu"
-            [(ngModel)]="anioE"
+            [(ngModel)]="paginaP"
             required
           />
         </div>
         <div class="form-group">
-          <label for="anioE">CONDICION (Concluido/ Cursando) </label>
+          <label for="anioE">URL REPOSITORIO GITHUB PROYECTO</label>
           <input
             type="text"
             class="form-control"
             id="anioE"
             name="anioE"
-            [(ngModel)]="condicionE"
+            [(ngModel)]="repositorioP"
             required
           />
         </div>
 
-        <button class="btn btn-success" (click)="onCreate()">AGREGAR</button>
+        <button class="btn btn-success" (click)="onCreate()">INCORPORAR</button>
         <button (click)="cancelar()" class="btn btn-dark">CANCELAR</button>
       </form>
     </div>

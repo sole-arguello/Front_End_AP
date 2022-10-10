@@ -1,0 +1,41 @@
+<div class="container mt-6">
+  <div class="row justify-content-center">
+    <div>
+      <h4>NUEVA RED SOCIAL</h4>
+      <form #f="ngForm" novalidate>
+        <img
+          [src]="imgRed"
+          style="width: 200px"
+          class="card-img-top"
+          id="img"
+          alt="..."
+        />
+        <div class="form-group">
+          <label for="imgRed">URL IMAGEN RED SOCIAL</label>
+          <input
+            type="text"
+            class="form-control"
+            id="imgRed"
+            name="imgRed"
+            [(ngModel)]="imgRed"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="linkRed">URL DE LA RED SOCIAL</label>
+          <input
+            type="text"
+            class="form-control"
+            id="linkRed"
+            name="linkRed"
+            [(ngModel)]="linkRed"
+            required
+          />
+        </div>
+
+        <button class="btn btn-success" (click)="onCreate()">AGREGAR</button>
+        <button (click)="cancelar()" class="btn btn-dark">CANCELAR</button>
+      </form>
+    </div>
+  </div>
+</div>

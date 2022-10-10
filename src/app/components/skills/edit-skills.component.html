@@ -1,0 +1,52 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div>
+      <h4>ACTUALIZAR SKILL</h4>
+      <form #f="ngForm" novalidate>
+        <img
+          [src]="skill.imgS"
+          style="width: 200px"
+          class="card-img-top"
+          id="img"
+          alt="..."
+        />
+        <div class="form-group imagen">
+          <label for="img">URL DEL LOGO SKILL</label>
+          <input
+            type="text"
+            class="form-control"
+            id="img"
+            name="imgS"
+            [(ngModel)]="skill.imgS"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="nombres">NOMBRE SKILL</label>
+          <input
+            type="text"
+            class="form-control"
+            id="nombres"
+            name="nombres"
+            [(ngModel)]="skill.nombreS"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="porcentajes">PORCENTAJE CONOCIMIENTO </label>
+          <input
+            type="text"
+            class="form-control"
+            id="porcentajes"
+            name="porcentajes"
+            [(ngModel)]="skill.porcentajeS"
+            required
+          />
+        </div>
+
+        <button class="btn btn-success" (click)="onUpdate()">AGREGAR</button>
+        <button (click)="cancelar()" class="btn btn-dark">CANCELAR</button>
+      </form>
+    </div>
+  </div>
+</div>

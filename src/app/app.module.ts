@@ -11,19 +11,27 @@ import { HomeComponent } from './components/home/home.component';
 import { EducacionComponent } from './components/educacion/educacion.component';
 
 import { NgCircleProgressModule } from 'ng-circle-progress';
-import { SkillsComponent } from './components/skills/skills.component';
+import { SkillComponent } from './components/skills/skills.component';
+
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
+
 import { FooterComponent } from './components/footer/footer.component';
 import { PruebaComponent } from './components/prueba/prueba.component';
 import { LoginComponent } from './components/login/login.component';
 import { HttpClientModule } from '@angular/common/http';
 import { interceptorProvider } from './sevice/interceptor-service';
-
 import { EditarPersonaComponent } from './components/sobre-mi/editar-persona.component';
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
 import { EditExperienciaComponent } from './components/experiencia/edit-experiencia.component';
 import { NewEducacionComponent } from './components/educacion/new-educacion.component';
 import { EditEducacionComponent } from './components/educacion/edit-educacion.component';
+import { NewSkillsComponent } from './components/skills/new-skills.component';
+import { EditSkillsComponent } from './components/skills/edit-skills.component';
+
+import { NewProyectoComponent } from './components/proyectos/new-proyecto.component';
+import { EditProyectoComponent } from './components/proyectos/edit-proyecto.component';
+import { NewredComponent } from './components/logo-ap/newred.component';
+import { EditredComponent } from './components/logo-ap/editred.component';
 
 @NgModule({
   declarations: [
@@ -33,8 +41,9 @@ import { EditEducacionComponent } from './components/educacion/edit-educacion.co
     SobreMiComponent,
     HomeComponent,
     EducacionComponent,
-    SkillsComponent,
+
     ProyectosComponent,
+
     FooterComponent,
     PruebaComponent,
     LoginComponent,
@@ -43,6 +52,14 @@ import { EditEducacionComponent } from './components/educacion/edit-educacion.co
     EditExperienciaComponent,
     NewEducacionComponent,
     EditEducacionComponent,
+    NewSkillsComponent,
+    EditSkillsComponent,
+    SkillComponent,
+
+    NewProyectoComponent,
+    EditProyectoComponent,
+    NewredComponent,
+    EditredComponent,
   ],
   imports: [
     BrowserModule,
