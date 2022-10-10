@@ -1,6 +1,8 @@
 <a id="experiencia"></a>
+
 <div class="container">
-  <p class="text-center fs-1 fw-bold ">Experiencia</p>
+  <p class="titulo text-center">Experiencia</p>
+  <!---------------   BOTEN NUEVA EDU   ----------------------->
   <button
     type="button"
     class="btn btn__nuevaExperiencia"
@@ -9,17 +11,19 @@
   >
     Nueva Experiencia
   </button>
+  <!----------------   CONTENIDO DE LA CARD   ------------------------>
   <div class="row g-2 justify-content-center">
     <div
-      class="col-12 col-md-6 col-lg-6 borde"
+      class="contenido__card col-12 col-md-6 col-lg-6 borde"
       id="card"
       *ngFor="let Experiencia of expe"
     >
+    <!---------    BOTONES DE EDICION    -------------->
       <div class="edicion" *ngIf="isLogged">
-        <button class="editar btn" routerLink="/editexp/{{ Experiencia.id }}">
+        <button class="btn__iconos btn btn-sm btn-outline-secondary" routerLink="/editexp/{{ Experiencia.id }}">
           <i class="fa-solid fa-pencil"></i>
         </button>
-        <button class="borrar btn" (click)="delete(Experiencia.id)">
+        <button class="btn__iconos btn btn-sm btn-outline-secondary" (click)="delete(Experiencia.id)">
           <i class="fa-solid fa-trash-can"></i>
         </button>
       </div>
@@ -31,7 +35,7 @@
     </div>
   </div>
 </div>
-
+<!--------------------  FORMULARIO DE NUEVA EXPE  ---------------------->
 <div class="modal fade" id="ventanaexperiencia">
   <div class="modal-dialog">
     <div class="modal-content">

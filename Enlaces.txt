@@ -51,15 +51,15 @@ https://i.ibb.co/LxC0sgZ/Alura-Latam.jpg
 UTN:
 https://i.ibb.co/N9nfSwJ/Utn2.jpg
 
-ISPC:
-https://i.ibb.co/fQyj7vG/ISPC2.png
+ISPhttps://i.ibb.co/fQyj7vG/ISPC2.pngC:
+
 
 CoderHouse:
 https://i.ibb.co/gjxw0Dm/Coder-House.webp
 
 Codo a Codo:
-https://i.ibb.co/TBpTQ1y/Codo-Codo2.jpg
-https://i.ibb.co/rKPGwZc/Codo-ACodo.jpg
+https://i.ibb.co/rKPGwZc/Codo-ACodo.jpghttps://i.ibb.co/TBpTQ1y/Codo-Codo2.jpg
+
 
 ARg Prog:
 https://i.ibb.co/WD9fTJW/CursoAP.png
@@ -67,6 +67,9 @@ https://i.ibb.co/WD9fTJW/CursoAP.png
 
 experiencia:
 https://i.ibb.co/2N5gdKR/experiencia.jpg
+
+https://i.ibb.co/bQwJkX0/Telefonica.jpg
+https://i.ibb.co/BTNDYDp/teleperfometjd.jpg
 
 
 Proyectos:
