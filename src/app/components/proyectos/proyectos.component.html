@@ -2,27 +2,34 @@
 <div class="contenedor">
 
     <p class="titulo">Proyectos Realizados</p>
+    <!-------------   BTN DE NUEVO PROYECTO ---------------------------->
     <button class="btn_nuevo" routerLink="/nuevapro" *ngIf="isLogged"> Nuevo Proyecto</button>
+    
+    
     <div class="row card_proyecto" *ngFor="let Proyecto of pro">
         <div class=" d-flex justify-content-between align-items-center">
+            <!--------------- BTN DE EDICION  -------------------------->
             <div class="btn-group btn_edicion" *ngIf="isLogged">
-                <button type="button" class="btn btn-sm btn-outline-secondary" routerLink="/editpro/{{Proyecto.id}}">
+                <button type="button" class="iconos btn btn-sm btn-outline-secondary" routerLink="/editpro/{{Proyecto.id}}">
                     <i class="fa-solid fa-pencil"></i></button>
-                <button type="button" class="btn btn-sm btn-outline-secondary" (click)="delete(Proyecto.id)">
+                <button type="button" class="iconos btn btn-sm btn-outline-secondary" (click)="delete(Proyecto.id)">
                      <i class="fa-solid fa-trash-can"></i></button>
             </div>
-        </div>        
+        </div>
+        <!--------------  TITULO Y DESCRIPCION  ------------->        
         <div class="col-md-6 col-xl-6 detalles">
             <h2 class="texto">{{Proyecto.nombreP}}</h2>
-            <h4 class="texto">{{Proyecto.descripcionP}}</h4>
+            <h4 class="texto__descripcion">{{Proyecto.descripcionP}}</h4>
         </div>
         
         <div class="col-xl-2"></div>
         
+        <!---------------- IMAGEN ------------------------->
         <div class="col-md-6 col-xl-4">
-            <img [src]="Proyecto.imgP" class="img-fluid imgProyecto">
+            <img [src]="Proyecto.imgP" class=" img-fluid imgProyecto">
         </div>
 
+        <!-------------------  BTN DE PAGINAS  ----------------->
         <div class="redes  col  col-xl-12 contenedor_botones">
 
             <a class="btn_pieCard" href="{{Proyecto.paginaP}}" target="_blank">Pagina</a> 

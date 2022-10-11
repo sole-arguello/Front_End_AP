@@ -73,4 +73,7 @@
   .contenedor_info {
     display: block;
   }
+  .banner{
+    height: 200px;
+  }
 }
