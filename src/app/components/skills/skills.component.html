@@ -2,6 +2,8 @@
 
 <div class="contenedor_skill">
   <h1 class="titulo">Hards & Soft Skills</h1>
+
+  <!-------------------------  BTN NUEVO SKILL ------------------>
   <button
     type="button"
     class="btn_nuevo"
@@ -13,9 +15,10 @@
 
   <div class="row">
     <div
-      class="text-center col-sm-4 col-md-4 col-lg-4 container_car"
+      class="contenido__card text-center col-sm-4 col-md-4 col-lg-4 container_car"
       *ngFor="let Skill of ski"
     >
+    <!----------------  BTN DE EDICION   ------------------------>
       <div class="btn_edicion" *ngIf="isLogged">
         <button class="icono_edicion" routerLink="/editskil/{{ Skill.id }}">
           <i class="fa-solid fa-pencil"></i>
@@ -24,8 +27,8 @@
           <i class="fa-solid fa-trash-can" (click)="delete(Skill.id)"></i>
         </button>
       </div>
-
-      <div>
+      <!-----------------   INFO DE LOS CIRCULOS  --------------->
+      <div class="contenido__titulo">
         <h4 class="sub-titulo">{{ Skill.nombreS }}</h4>
       </div>
       <circle-progress

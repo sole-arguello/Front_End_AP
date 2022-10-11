@@ -16,7 +16,6 @@ import { SkillComponent } from './components/skills/skills.component';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 
 import { FooterComponent } from './components/footer/footer.component';
-import { PruebaComponent } from './components/prueba/prueba.component';
 import { LoginComponent } from './components/login/login.component';
 import { HttpClientModule } from '@angular/common/http';
 import { interceptorProvider } from './sevice/interceptor-service';
@@ -45,7 +44,6 @@ import { EditredComponent } from './components/logo-ap/editred.component';
     ProyectosComponent,
 
     FooterComponent,
-    PruebaComponent,
     LoginComponent,
     EditarPersonaComponent,
     ExperienciaComponent,

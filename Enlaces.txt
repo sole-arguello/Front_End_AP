@@ -34,15 +34,44 @@ https://i.ibb.co/cJgwSJT/CSS.png
 Logo JS:
 https://i.ibb.co/fSdSy4x/js.png
 
+Logo Python:
+https://i.ibb.co/GkxS84X/Python.png
+
+Logo Java:
+https://i.ibb.co/CHFbLbY/java.png
+
+Logo TS:
+https://i.ibb.co/D78d2xv/type-Script.png
+
+Logo Angular:
+https://i.ibb.co/YbMssVF/Angular.png
+
+Logo Bootstrap:
+https://i.ibb.co/hf0Z7tq/bootstrap2.png
+
+Logo MySQL:
+https://i.ibb.co/J2K5N8D/mysql2.png
+https://i.ibb.co/72zhWCt/MySQL.jpg
+
+
+
 Logo GitHub:
 https://i.ibb.co/QM7TZvF/gitHub.png
 
-Logo:
+Logo Idioma:
 https://i.ibb.co/S7dhrfn/Skill.png
 
-Trabajo Grupal:
+Trabajo Colaborativo:
 https://i.ibb.co/rF959Yn/grupal.png
 
+Agiles:
+https://i.ibb.co/dMCxCv4/Agiles.jpg
+
+Comunicacion:
+https://i.ibb.co/5v0cQjB/comunicacion.png
+
+Liderazgo:
+https://i.ibb.co/bdmD21K/lider.png
 ----------------------------------
 
 Alura:

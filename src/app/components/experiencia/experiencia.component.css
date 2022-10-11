@@ -1,5 +1,6 @@
 .container {
   text-align: center;
+  padding-bottom: 5rem;
 }
 .titulo {
   font-size: 3rem;
@@ -10,12 +11,6 @@
 
 /*--- BTN NUEVA EXPE ----*/
 .btn__nuevaExperiencia {
-  /*
-  color: rgb(144, 168, 192);
-  background: rgb(250, 246, 246);
-  box-shadow: 0px 2px 2px 0px rgb(129, 129, 131);
-  font-size: 15px;
-  font-weight: 600;*/
   margin-bottom: 5rem;
   padding: 1%;
   font-weight: 600;
