@@ -1,5 +1,25 @@
 Enlaces de proyecto integrador Argentina Programa: 
+imagenes guardadas
 URL: https://ibb.co/album/NxWkRS
+DEPLOY:
+firebase:
+https://console.firebase.google.com/u/0/project/front-end-msa/hosting/sites?hl=es-419
+heroku:
+https://dashboard.heroku.com/apps/back-end-msa/deploy/heroku-git
+
+Datos del clever:(conecto por medio de git)
+url: https://console.clever-cloud.com/?user=user_40582987-4126-468a-b815-f2cbbcb9b0c1
+host: bjdgfkbq5k4g8rlt69zr-mysql.services.clever-cloud.com
+Database Name: bjdgfkbq5k4g8rlt69zr
+user: updb0msy1o1fjuap
+password: Oap2o20DjyeGTyLRDH1a
+
+------------------------------------------------
+url linkedin: https://www.linkedin.com/in/soledad-arguello-02b905220/
+url instagram: https://www.instagram.com/solearguello_/
+url git: https://github.com/sole-arguello?tab=repositories
+https://github.com/sole-arguello
+
 -------------------------------------------------
 
 
@@ -9,7 +29,6 @@ https://i.ibb.co/KN9KPZh/APLogo.png
 logo Gmail:
 https://i.ibb.co/BP8rrrD/correo3.png
 https://i.ibb.co/zPvmbq7/correo.png
-<i class="fa-regular fa-envelope"></i>
 
 Logo Git:
 https://i.ibb.co/TbLVDMd/git.png
@@ -106,22 +125,21 @@ Proyectos:
 
 Ahorcado:
 https://i.ibb.co/CWKTVLd/ahorcado.png
+url repo: https://github.com/sole-arguello/Oracle-Alura-juego-del-ahorcado
+page: https://sole-arguello.github.io/Oracle-Alura-juego-del-ahorcado/
 
 AluraGeek:
 https://i.ibb.co/0hF3L94/Alura-Geek.png
+url repo: https://github.com/sole-arguello/Oracle-Alura-E-commerce-AluraGeek
+url page: https://soledad-arguello-oracle-alura-ecommerce.netlify.app/
 
 Encriptador:
 https://i.ibb.co/HGsbvSb/encriptador.png
+repo: https://github.com/sole-arguello/Oracle-Alura
+page: https://sole-arguello.github.io/Oracle-Alura/
 
 porfolio:
 https://i.ibb.co/rsNP9pj/Porfolio.png
+repo: https://github.com/sole-arguello/Oracle-Alura-Mi-Porfolio-web
+page: https://sole-arguello.github.io/Oracle-Alura-Mi-Porfolio-web/
 
-
-
-
-
-
-   
-
-
---------------------------------------------
