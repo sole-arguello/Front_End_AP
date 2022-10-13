@@ -16,7 +16,9 @@ import { Redes } from '../model/redes';
   providedIn: 'root',
 })
 export class RedesService {
-  redUrl = 'http://localhost:8080/red/';
+ // redUrl = 'http://localhost:8080/red/';
+ redUrl = ' https://back-end-msa.herokuapp.com/red/';
+
   /*deploy*/
   //redUrl = 'https://backend-arpr.herokuapp.com/red/';
 
