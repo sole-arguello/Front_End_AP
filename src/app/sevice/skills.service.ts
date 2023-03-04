@@ -8,7 +8,7 @@ import { Skill } from '../model/skills';
 })
 export class SkillsService {
   //skiUrl = 'http://localhost:8080/ski/';
-  skiUrl = ' https://back-end-msa.herokuapp.com/ski/';
+  skiUrl = 'https://porfolioweb.onrender.com/ski/';
 
   constructor(private httpClient: HttpClient) {}
 

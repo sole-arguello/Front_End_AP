@@ -8,7 +8,7 @@ import { Educacion } from '../model/educacion';
 })
 export class EducacionService {
   //eduUrl = 'http://localhost:8080/edu/';
-  eduUrl = ' https://back-end-msa.herokuapp.com/edu/'; 
+  eduUrl = 'https://porfolioweb.onrender.com/edu/'; 
 
   constructor(private httpClient:HttpClient) { }
   
